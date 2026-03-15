@@ -3,33 +3,56 @@
 Python automation tool for preparing weekly business reporting outputs from multiple data sources.
 
 ## Overview
-This project automates a recurring reporting workflow that was previously prepared manually from several files.  
-The script collects data, applies the required transformations, and generates output ready to be used in management reporting.
 
-## Business problem
-Weekly reporting required manual work across multiple Excel sources.  
-The process was repetitive, time-consuming, and dependent on manual calculations such as averages and aggregations.
+This project automates the preparation of weekly business reports that previously required manual data aggregation across multiple Excel files.
+
+The tool reads raw input files, performs necessary data transformations, and generates output ready to be used in management reporting.
+
+---
+
+## Business Problem
+
+Weekly reporting required collecting data from multiple sources and performing manual calculations such as averages or aggregations.
+
+The process was repetitive and time-consuming, and errors could easily occur when preparing the final report.
+
+---
 
 ## Solution
-I built a lightweight ETL-style workflow in Python that:
-- reads data from multiple source files,
-- transforms and aggregates the data,
-- prepares final output in a format ready for reporting.
 
-## Tech stack
+A Python-based automation tool that processes raw data files and generates structured reporting outputs.
+
+The script reduces manual work and ensures consistent data processing across reporting cycles.
+
+---
+
+## Tech Stack
+
 - Python
 - pandas
 - Excel-based input/output
 
-## Workflow
-1. Load source files
-2. Clean and filter the data
-3. Apply required calculations (for example averages or sums)
-4. Generate output for weekly reporting
+---
+
+## Processing Logic
+
+Internally, the script performs the following steps:
+
+1. Load input datasets from multiple Excel sources.
+2. Clean and normalize the data.
+3. Apply required aggregations (for example averages or totals).
+4. Combine results into a structured output dataset.
+5. Export the final report-ready file.
+
+---
 
 ## Result
-The tool reduced manual work in weekly report preparation and made the process faster and more repeatable.
+
+The tool significantly reduced manual effort required for weekly reporting preparation and made the process more reliable and repeatable.
+
+---
 
 ## Notes
+
 This repository contains an anonymized version of the project.  
-Any business-sensitive names, files, and internal identifiers were removed or generalized.
+All company-specific data, identifiers, and internal system references have been removed.
